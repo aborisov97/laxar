@@ -121,7 +121,7 @@ Before loading a page and its widgets, LaxarJS will validate the configuration p
 LaxarJS will also fill in defaults specified by the schema.
 
 
-### <a name="specialPurpoceAreas"></a>Special Purpose Widget Areas
+### <a name="special_purpose_areas"></a>Special Purpose Widget Areas
 
 Even when using the most basic layout, LaxarJS always provides three special widget areas:
 
