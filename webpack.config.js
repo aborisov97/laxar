@@ -10,8 +10,11 @@ const path = require( 'path' );
 const entries = [ 'polyfills', 'laxar', 'laxar-compatibility', 'laxar-widget-service-mocks' ];
 const libs = [ 'loaders', 'runtime', 'testing', 'tooling', 'utilities' ];
 
+const ModuleConcatenationPlugin = require( 'webpack' ).optimize.ModuleConcatenationPlugin;
+
 const webpackInfrastructure = require( 'laxar-infrastructure' ).webpack( {
    context: __dirname,
+   plugins: [ new ModuleConcatenationPlugin() ],
    module: {
       rules: [
          {
